@@ -1,0 +1,45 @@
+<?php
+$students = [
+    [
+        'name' => 'Alice',
+        'program' => 'BIP',
+        'age' => 21
+    ],
+    [
+        'name' => 'Bob',
+        'program' => 'BIS',
+        'age' => 20
+    ],
+    [
+        'name' => 'Raju',
+        'program' => 'BIT',
+        'age' => 22
+    ]
+];
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FSKTM Student Information</title>
+</head>
+<body>
+    <h3>STUDENT FSKTM INFORMATION</h3>
+    <table border='1'>
+        <tr>
+        <th>Name</th>
+        <th>Program</th>
+        <th>Age</th>
+        
+        <?php
+        foreach ($students as $stud) {
+            echo "<tr>";
+            echo "<td>{$stud['name']}</td>";
+            echo "<td>{$stud['program']}</td>";
+            echo "<td>{$stud['age']}</td>";
+            echo "</tr>";
+        }
+        ?>
+    </table>
+</body>
+</html>
