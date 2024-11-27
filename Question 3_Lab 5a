@@ -4,11 +4,11 @@ function calculateArea($width, $height) {
     return $width * $height;
 }
 
-// Define value untuk width dan height
+// value untuk width dan height
 $width = 4;
 $height = 2;
 
-// Call the function and kira area
+// panggil function and kira area
 $area = calculateArea($width, $height);
 ?>
 
@@ -30,3 +30,5 @@ $area = calculateArea($width, $height);
     </p>
 </body>
 </html>
+
+
